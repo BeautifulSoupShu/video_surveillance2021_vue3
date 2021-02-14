@@ -6,7 +6,7 @@
         <AppLocalePicker v-if="showLocale" class="login-form__locale" />
         <div class="px-2 py-10 login-form__content">
           <header>
-            <img :src="logo" class="mr-4" />
+<!--            <img :src="logo" class="mr-4" style="border-radius: 60px" />-->
             <h1>{{ title }}</h1>
           </header>
 
