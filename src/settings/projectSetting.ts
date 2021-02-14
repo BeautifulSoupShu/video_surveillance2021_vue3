@@ -4,15 +4,14 @@ import { MenuTypeEnum, MenuModeEnum, TriggerEnum, MixSidebarTriggerEnum } from '
 import { CacheTypeEnum } from '/@/enums/cacheEnum';
 import { ContentEnum, PermissionModeEnum, ThemeEnum, RouterTransitionEnum } from '/@/enums/appEnum';
 import { primaryColor, themeMode } from '../../build/config/themeConfig';
-import { isProdMode } from '/@/utils/env';
 
 // ! You need to clear the browser cache after the change
 const setting: ProjectConfig = {
   // Whether to show the configuration button
-  showSettingButton: false,
+  showSettingButton: true,
 
   // Permission mode
-  permissionMode: PermissionModeEnum.BACK,
+  permissionMode: PermissionModeEnum.ROLE,
 
   // Permission-related cache is stored in sessionStorage or localStorage
   permissionCacheType: CacheTypeEnum.LOCAL,
@@ -68,7 +67,7 @@ const setting: ProjectConfig = {
     // Whether to show the full screen button
     showFullScreen: true,
     // Whether to show the document button
-    showDoc: true,
+    showDoc: false,
     // Whether to show the notification button
     showNotice: true,
     // Whether to display the menu search
@@ -161,7 +160,7 @@ const setting: ProjectConfig = {
   showBreadCrumbIcon: false,
 
   // Use error-handler-plugin
-  useErrorHandle: isProdMode(),
+  useErrorHandle: false,
 
   // Whether to open back to top
   useOpenBackTop: true,

@@ -3,7 +3,6 @@ import type { AppRouteModule } from '/@/router/types';
 import { LAYOUT } from '/@/router/constant';
 import { t } from '/@/hooks/web/useI18n';
 
-// @ts-ignore
 const dashboard: AppRouteModule = {
   path: '/home',
   name: 'Home',
