@@ -12,14 +12,14 @@
 
           <a-form class="login-form__main" :model="formData" :rules="formRules" ref="formRef">
             <a-form-item name="account">
-              <a-input size="large" v-model:value="formData.account" placeholder="username: vben" />
+              <a-input size="large" v-model:value="formData.account" placeholder="username: Gopher2021" />
             </a-form-item>
             <a-form-item name="password">
               <a-input-password
                 size="large"
                 visibilityToggle
                 v-model:value="formData.password"
-                placeholder="password: 123456"
+                placeholder="password: password"
               />
             </a-form-item>
 
@@ -95,8 +95,8 @@
       const { t } = useI18n();
 
       const formData = reactive({
-        account: 'vben',
-        password: '123456',
+        account: 'Gopher2021',
+        password: 'password',
       });
 
       const formState = reactive({
